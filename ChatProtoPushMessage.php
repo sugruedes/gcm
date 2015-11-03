@@ -2,6 +2,12 @@
 
 /*  push a message to ChatProto server
 *
+* This is a trivial implementation to prototype a go server
+* based on work by Matt Grundy
+*
+*	Adapted from the code available at:
+*	http://stackoverflow.com/questions/11242743/gcm-with-php-google-cloud-messaging
+*
 *
 */
 
@@ -89,8 +95,6 @@ class ChatProtoPushMessage {
 		    { 
 		        $this->error("Error with curl..."); 
 		    } 
-		
-		echo "4\n";
 		
 		// Close connection
 		curl_close($ch);
